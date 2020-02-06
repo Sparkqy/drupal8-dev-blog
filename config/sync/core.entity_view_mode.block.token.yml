@@ -1,0 +1,10 @@
+uuid: fac22159-24b6-42bc-8efe-642ef4cf96b0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+id: block.token
+label: Token
+targetEntityType: block
+cache: true
