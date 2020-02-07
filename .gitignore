@@ -25,5 +25,8 @@
 .editorconfig
 .gitattributes
 
-#Ignore node_modules
+# Ignore node_modules
 /node_modules
+
+# Ignore docker files as they are personal
+docker-compose.override.yml
