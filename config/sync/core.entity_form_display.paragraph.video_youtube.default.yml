@@ -1,0 +1,33 @@
+uuid: 14e391b4-e294-457a-a2fd-c43c0ddc4b1c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.video_youtube.field_title
+    - field.field.paragraph.video_youtube.field_video_youtube
+    - paragraphs.paragraphs_type.video_youtube
+  module:
+    - youtube
+id: paragraph.video_youtube.default
+targetEntityType: paragraph
+bundle: video_youtube
+mode: default
+content:
+  field_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_video_youtube:
+    weight: 1
+    settings:
+      placeholder_url: ''
+    third_party_settings: {  }
+    type: youtube
+    region: content
+hidden:
+  created: true
+  status: true
